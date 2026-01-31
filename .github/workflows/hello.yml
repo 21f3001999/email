@@ -1,0 +1,13 @@
+name: 'My First Action with Email'
+
+on: [push, workflow_dispatch]  # Triggers on code pushes or manual run
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest  # Free Linux machine provided by GitHub
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Grabs your repo files
+
+      - name: 21f3001999@ds.study.iitm.ac.in  # Your required step name!
+        run: echo "Hello from GitHub Actions! This step has my email."  # Simple output
